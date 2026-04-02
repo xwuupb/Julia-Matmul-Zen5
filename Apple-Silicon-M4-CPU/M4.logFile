@@ -1,0 +1,1101 @@
+Darwin m4.fritz.box 25.3.0 Darwin Kernel Version 25.3.0: Wed Jan 28 20:54:55 PST 2026; root:xnu-12377.91.3~2/RELEASE_ARM64_T8132 arm64
+2026-04-01 22:51:59.370 system_profiler[69218:19652729] hw.cpufamily: 0x6f5129ac
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: Mac mini
+      Model Identifier: Mac16,10
+      Model Number: MU9D3D/A
+      Chip: Apple M4
+      Total Number of Cores: 10 (4 Performance and 6 Efficiency)
+      Memory: 16 GB
+      System Firmware Version: 13822.81.10
+      OS Loader Version: 13822.81.10
+      Serial Number (system): Y44RVW0VDC
+      Hardware UUID: 909BF6F7-2FCC-5FCE-8679-EF800C6067EA
+      Provisioning UDID: 00008132-001E31102E99801C
+      Activation Lock Status: Disabled
+
++ npcore=4
++ julia --cpu-target=apple-m4 --optimize=3 --check-bounds=no --math-mode=user --project=@. -t 4,0 -- matmul.jl
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 720x720 matrix:   0.00 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:    0.011 sec ->      65.0 GFLOPS (   92.32% HW-peak,   120.60% OpenBLAS)
+OpenBLAS: walltime:    0.014 sec ->      53.9 GFLOPS (   76.55% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    0.008 sec ->      91.5 GFLOPS (   32.48% HW-peak,    55.96% OpenBLAS)
+OpenBLAS: walltime:    0.005 sec ->     163.5 GFLOPS (   58.04% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 1440x1440 matrix:   0.02 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:    0.094 sec ->      63.8 GFLOPS (   90.66% HW-peak,   107.86% OpenBLAS)
+OpenBLAS: walltime:    0.101 sec ->      59.2 GFLOPS (   84.05% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    0.030 sec ->     202.3 GFLOPS (   71.82% HW-peak,   102.98% OpenBLAS)
+OpenBLAS: walltime:    0.030 sec ->     196.4 GFLOPS (   69.75% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 2160x2160 matrix:   0.04 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:    0.319 sec ->      63.3 GFLOPS (   89.88% HW-peak,   111.59% OpenBLAS)
+OpenBLAS: walltime:    0.355 sec ->      56.7 GFLOPS (   80.54% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    0.101 sec ->     199.9 GFLOPS (   70.97% HW-peak,   101.69% OpenBLAS)
+OpenBLAS: walltime:    0.103 sec ->     196.5 GFLOPS (   69.80% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 2880x2880 matrix:   0.07 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:    0.753 sec ->      63.4 GFLOPS (   90.07% HW-peak,   108.89% OpenBLAS)
+OpenBLAS: walltime:    0.820 sec ->      58.2 GFLOPS (   82.71% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    0.240 sec ->     199.4 GFLOPS (   70.82% HW-peak,   100.10% OpenBLAS)
+OpenBLAS: walltime:    0.240 sec ->     199.2 GFLOPS (   70.75% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 3600x3600 matrix:   0.10 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:    1.479 sec ->      63.1 GFLOPS (   89.64% HW-peak,   108.36% OpenBLAS)
+OpenBLAS: walltime:    1.602 sec ->      58.2 GFLOPS (   82.73% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    0.472 sec ->     197.9 GFLOPS (   70.27% HW-peak,    99.27% OpenBLAS)
+OpenBLAS: walltime:    0.468 sec ->     199.3 GFLOPS (   70.79% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 4320x4320 matrix:   0.15 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:    2.585 sec ->      62.4 GFLOPS (   88.61% HW-peak,   107.50% OpenBLAS)
+OpenBLAS: walltime:    2.779 sec ->      58.0 GFLOPS (   82.43% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    0.842 sec ->     191.5 GFLOPS (   68.00% HW-peak,    95.74% OpenBLAS)
+OpenBLAS: walltime:    0.806 sec ->     200.0 GFLOPS (   71.02% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 5040x5040 matrix:   0.20 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:    4.109 sec ->      62.3 GFLOPS (   88.52% HW-peak,   107.89% OpenBLAS)
+OpenBLAS: walltime:    4.433 sec ->      57.8 GFLOPS (   82.05% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    1.327 sec ->     193.0 GFLOPS (   68.54% HW-peak,    96.81% OpenBLAS)
+OpenBLAS: walltime:    1.284 sec ->     199.4 GFLOPS (   70.80% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 5760x5760 matrix:   0.27 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:    6.189 sec ->      61.8 GFLOPS (   87.71% HW-peak,   107.39% OpenBLAS)
+OpenBLAS: walltime:    6.647 sec ->      57.5 GFLOPS (   81.68% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    2.029 sec ->     188.4 GFLOPS (   66.89% HW-peak,    94.61% OpenBLAS)
+OpenBLAS: walltime:    1.920 sec ->     199.1 GFLOPS (   70.71% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 6480x6480 matrix:   0.34 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:    8.853 sec ->      61.5 GFLOPS (   87.31% HW-peak,   107.46% OpenBLAS)
+OpenBLAS: walltime:    9.514 sec ->      57.2 GFLOPS (   81.25% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    2.959 sec ->     183.9 GFLOPS (   65.32% HW-peak,    92.89% OpenBLAS)
+OpenBLAS: walltime:    2.748 sec ->     198.0 GFLOPS (   70.32% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 7200x7200 matrix:   0.41 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   12.305 sec ->      60.7 GFLOPS (   86.17% HW-peak,   106.49% OpenBLAS)
+OpenBLAS: walltime:   13.104 sec ->      57.0 GFLOPS (   80.92% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    4.330 sec ->     172.4 GFLOPS (   61.22% HW-peak,    87.28% OpenBLAS)
+OpenBLAS: walltime:    3.779 sec ->     197.5 GFLOPS (   70.14% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 7920x7920 matrix:   0.50 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   16.283 sec ->      61.0 GFLOPS (   86.68% HW-peak,   107.38% OpenBLAS)
+OpenBLAS: walltime:   17.484 sec ->      56.8 GFLOPS (   80.72% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    5.746 sec ->     172.9 GFLOPS (   61.40% HW-peak,    87.85% OpenBLAS)
+OpenBLAS: walltime:    5.048 sec ->     196.8 GFLOPS (   69.90% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 8640x8640 matrix:   0.60 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   21.201 sec ->      60.8 GFLOPS (   86.43% HW-peak,   107.31% OpenBLAS)
+OpenBLAS: walltime:   22.751 sec ->      56.7 GFLOPS (   80.54% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    7.873 sec ->     163.8 GFLOPS (   58.18% HW-peak,    83.57% OpenBLAS)
+OpenBLAS: walltime:    6.579 sec ->     196.1 GFLOPS (   69.63% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 9360x9360 matrix:   0.70 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   26.966 sec ->      60.8 GFLOPS (   86.39% HW-peak,   107.40% OpenBLAS)
+OpenBLAS: walltime:   28.960 sec ->      56.6 GFLOPS (   80.44% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:    9.787 sec ->     167.6 GFLOPS (   59.51% HW-peak,    86.04% OpenBLAS)
+OpenBLAS: walltime:    8.421 sec ->     194.7 GFLOPS (   69.16% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 10080x10080 matrix:   0.81 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   33.969 sec ->      60.3 GFLOPS (   85.66% HW-peak,   106.51% OpenBLAS)
+OpenBLAS: walltime:   36.182 sec ->      56.6 GFLOPS (   80.42% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   12.925 sec ->     158.5 GFLOPS (   56.28% HW-peak,    81.45% OpenBLAS)
+OpenBLAS: walltime:   10.528 sec ->     194.6 GFLOPS (   69.09% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 10800x10800 matrix:   0.93 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   41.319 sec ->      61.0 GFLOPS (   86.61% HW-peak,   107.70% OpenBLAS)
+OpenBLAS: walltime:   44.501 sec ->      56.6 GFLOPS (   80.42% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   15.739 sec ->     160.1 GFLOPS (   56.84% HW-peak,    82.71% OpenBLAS)
+OpenBLAS: walltime:   13.018 sec ->     193.5 GFLOPS (   68.72% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 11520x11520 matrix:   1.06 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   50.479 sec ->      60.6 GFLOPS (   86.04% HW-peak,   106.99% OpenBLAS)
+OpenBLAS: walltime:   54.009 sec ->      56.6 GFLOPS (   80.42% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   19.835 sec ->     154.2 GFLOPS (   54.74% HW-peak,    79.44% OpenBLAS)
+OpenBLAS: walltime:   15.756 sec ->     194.1 GFLOPS (   68.91% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 12240x12240 matrix:   1.20 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   61.406 sec ->      59.7 GFLOPS (   84.84% HW-peak,   105.47% OpenBLAS)
+OpenBLAS: walltime:   64.764 sec ->      56.6 GFLOPS (   80.44% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   25.125 sec ->     146.0 GFLOPS (   51.84% HW-peak,    75.50% OpenBLAS)
+OpenBLAS: walltime:   18.970 sec ->     193.3 GFLOPS (   68.65% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 12960x12960 matrix:   1.34 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   71.850 sec ->      60.6 GFLOPS (   86.07% HW-peak,   106.98% OpenBLAS)
+OpenBLAS: walltime:   76.863 sec ->      56.6 GFLOPS (   80.45% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   28.706 sec ->     151.7 GFLOPS (   53.86% HW-peak,    78.52% OpenBLAS)
+OpenBLAS: walltime:   22.540 sec ->     193.2 GFLOPS (   68.59% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 13680x13680 matrix:   1.50 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:   84.182 sec ->      60.8 GFLOPS (   86.40% HW-peak,   107.33% OpenBLAS)
+OpenBLAS: walltime:   90.351 sec ->      56.7 GFLOPS (   80.50% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   33.734 sec ->     151.8 GFLOPS (   53.90% HW-peak,    78.45% OpenBLAS)
+OpenBLAS: walltime:   26.466 sec ->     193.5 GFLOPS (   68.70% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 14400x14400 matrix:   1.66 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:  101.766 sec ->      58.7 GFLOPS (   83.36% HW-peak,   103.53% OpenBLAS)
+OpenBLAS: walltime:  105.358 sec ->      56.7 GFLOPS (   80.52% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   41.638 sec ->     143.4 GFLOPS (   50.93% HW-peak,    74.14% OpenBLAS)
+OpenBLAS: walltime:   30.869 sec ->     193.5 GFLOPS (   68.70% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 15120x15120 matrix:   1.83 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:  114.003 sec ->      60.6 GFLOPS (   86.14% HW-peak,   107.31% OpenBLAS)
+OpenBLAS: walltime:  122.342 sec ->      56.5 GFLOPS (   80.27% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   48.146 sec ->     143.6 GFLOPS (   50.99% HW-peak,    74.40% OpenBLAS)
+OpenBLAS: walltime:   35.821 sec ->     193.0 GFLOPS (   68.54% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 15840x15840 matrix:   2.01 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:  131.840 sec ->      60.3 GFLOPS (   85.64% HW-peak,   107.14% OpenBLAS)
+OpenBLAS: walltime:  141.256 sec ->      56.3 GFLOPS (   79.93% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   54.678 sec ->     145.4 GFLOPS (   51.62% HW-peak,    75.62% OpenBLAS)
+OpenBLAS: walltime:   41.349 sec ->     192.2 GFLOPS (   68.26% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 16560x16560 matrix:   2.19 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:  151.704 sec ->      59.9 GFLOPS (   85.04% HW-peak,   106.38% OpenBLAS)
+OpenBLAS: walltime:  161.376 sec ->      56.3 GFLOPS (   79.95% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   64.455 sec ->     140.9 GFLOPS (   50.04% HW-peak,    73.82% OpenBLAS)
+OpenBLAS: walltime:   47.578 sec ->     190.9 GFLOPS (   67.79% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: macOS (arm64-apple-darwin24.0.0)
+  CPU: 10 × Apple M4
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, apple-m4)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 4 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /Users/xwu/.julia13-pkg
+  LD_LIBRARY_PATH = /Users/xwu/mybin/openmpi/5.0.10/lib:
+
+each 17280x17280 matrix:   2.39 GB
+CPU max clock:   4.40 GHz
+Superscalar:    4
+SIMD vector length:  128-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64):  70.40 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 1
+Me:       walltime:  172.991 sec ->      59.7 GFLOPS (   84.74% HW-peak,   106.12% OpenBLAS)
+OpenBLAS: walltime:  183.569 sec ->      56.2 GFLOPS (   79.85% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 281.60 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.dylib)
+  # of BLAS threads → 4
+Me:       walltime:   72.564 sec ->     142.2 GFLOPS (   50.50% HW-peak,    74.62% OpenBLAS)
+OpenBLAS: walltime:   54.145 sec ->     190.6 GFLOPS (   67.68% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
