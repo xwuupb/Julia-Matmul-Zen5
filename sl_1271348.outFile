@@ -1,0 +1,1116 @@
+Architecture:                       x86_64
+CPU op-mode(s):                     32-bit, 64-bit
+Address sizes:                      52 bits physical, 57 bits virtual
+Byte Order:                         Little Endian
+CPU(s):                             192
+On-line CPU(s) list:                0-191
+Vendor ID:                          AuthenticAMD
+Model name:                         AMD EPYC 9655 96-Core Processor
+CPU family:                         26
+Model:                              2
+Thread(s) per core:                 1
+Core(s) per socket:                 96
+Socket(s):                          2
+Stepping:                           1
+BogoMIPS:                           5200.45
+Flags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local avx_vnni avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid bus_lock_detect movdiri movdir64b overflow_recov succor smca fsrm avx512_vp2intersect flush_l1d debug_swap
+L1d cache:                          9 MiB (192 instances)
+L1i cache:                          6 MiB (192 instances)
+L2 cache:                           192 MiB (192 instances)
+L3 cache:                           768 MiB (24 instances)
+NUMA node(s):                       2
+NUMA node0 CPU(s):                  0-95
+NUMA node1 CPU(s):                  96-191
+Vulnerability Gather data sampling: Not affected
+Vulnerability Itlb multihit:        Not affected
+Vulnerability L1tf:                 Not affected
+Vulnerability Mds:                  Not affected
+Vulnerability Meltdown:             Not affected
+Vulnerability Mmio stale data:      Not affected
+Vulnerability Retbleed:             Not affected
+Vulnerability Spec rstack overflow: Not affected
+Vulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:           Mitigation; Enhanced / Automatic IBRS, IBPB conditional, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:                Not affected
+Vulnerability Tsx async abort:      Not affected
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 720x720 matrix:   0.00 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    0.006 sec ->     122.6 GFLOPS (   85.17% HW-peak,   117.65% OpenBLAS)
+OpenBLAS: walltime:    0.007 sec ->     104.2 GFLOPS (   72.39% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    0.003 sec ->     227.6 GFLOPS (   39.52% HW-peak,    69.60% OpenBLAS)
+OpenBLAS: walltime:    0.002 sec ->     327.0 GFLOPS (   56.78% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 1440x1440 matrix:   0.02 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    0.050 sec ->     119.7 GFLOPS (   83.10% HW-peak,   104.78% OpenBLAS)
+OpenBLAS: walltime:    0.052 sec ->     114.2 GFLOPS (   79.31% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    0.012 sec ->     480.8 GFLOPS (   83.47% HW-peak,   410.28% OpenBLAS)
+OpenBLAS: walltime:    0.051 sec ->     117.2 GFLOPS (   20.34% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 2160x2160 matrix:   0.04 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    0.174 sec ->     116.2 GFLOPS (   80.66% HW-peak,   117.35% OpenBLAS)
+OpenBLAS: walltime:    0.204 sec ->      99.0 GFLOPS (   68.74% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    0.043 sec ->     464.6 GFLOPS (   80.66% HW-peak,   106.43% OpenBLAS)
+OpenBLAS: walltime:    0.046 sec ->     436.5 GFLOPS (   75.79% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 2880x2880 matrix:   0.07 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    0.401 sec ->     119.0 GFLOPS (   82.66% HW-peak,   110.25% OpenBLAS)
+OpenBLAS: walltime:    0.442 sec ->     108.0 GFLOPS (   74.98% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    0.101 sec ->     475.2 GFLOPS (   82.50% HW-peak,   105.16% OpenBLAS)
+OpenBLAS: walltime:    0.106 sec ->     451.9 GFLOPS (   78.45% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 3600x3600 matrix:   0.10 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    0.784 sec ->     119.1 GFLOPS (   82.69% HW-peak,   105.28% OpenBLAS)
+OpenBLAS: walltime:    0.825 sec ->     113.1 GFLOPS (   78.55% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    0.196 sec ->     477.1 GFLOPS (   82.82% HW-peak,   115.03% OpenBLAS)
+OpenBLAS: walltime:    0.225 sec ->     414.7 GFLOPS (   72.00% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 4320x4320 matrix:   0.15 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    1.409 sec ->     114.4 GFLOPS (   79.48% HW-peak,    99.17% OpenBLAS)
+OpenBLAS: walltime:    1.397 sec ->     115.4 GFLOPS (   80.14% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    0.350 sec ->     460.4 GFLOPS (   79.93% HW-peak,    99.64% OpenBLAS)
+OpenBLAS: walltime:    0.349 sec ->     462.1 GFLOPS (   80.22% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 5040x5040 matrix:   0.20 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    2.205 sec ->     116.1 GFLOPS (   80.64% HW-peak,    98.33% OpenBLAS)
+OpenBLAS: walltime:    2.168 sec ->     118.1 GFLOPS (   82.01% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    0.549 sec ->     466.4 GFLOPS (   80.97% HW-peak,   104.11% OpenBLAS)
+OpenBLAS: walltime:    0.572 sec ->     448.0 GFLOPS (   77.78% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 5760x5760 matrix:   0.27 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    3.185 sec ->     120.0 GFLOPS (   83.33% HW-peak,   101.04% OpenBLAS)
+OpenBLAS: walltime:    3.218 sec ->     118.8 GFLOPS (   82.47% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    0.795 sec ->     480.8 GFLOPS (   83.47% HW-peak,   102.88% OpenBLAS)
+OpenBLAS: walltime:    0.818 sec ->     467.3 GFLOPS (   81.14% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 6480x6480 matrix:   0.34 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    4.648 sec ->     117.1 GFLOPS (   81.31% HW-peak,    97.92% OpenBLAS)
+OpenBLAS: walltime:    4.551 sec ->     119.6 GFLOPS (   83.04% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    1.160 sec ->     469.3 GFLOPS (   81.48% HW-peak,    99.87% OpenBLAS)
+OpenBLAS: walltime:    1.158 sec ->     469.9 GFLOPS (   81.58% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 7200x7200 matrix:   0.41 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    6.117 sec ->     122.0 GFLOPS (   84.75% HW-peak,   101.94% OpenBLAS)
+OpenBLAS: walltime:    6.235 sec ->     119.7 GFLOPS (   83.14% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    1.526 sec ->     489.1 GFLOPS (   84.91% HW-peak,   103.65% OpenBLAS)
+OpenBLAS: walltime:    1.582 sec ->     471.9 GFLOPS (   81.93% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 7920x7920 matrix:   0.50 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:    8.416 sec ->     118.1 GFLOPS (   81.98% HW-peak,    98.12% OpenBLAS)
+OpenBLAS: walltime:    8.258 sec ->     120.3 GFLOPS (   83.55% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    2.101 sec ->     472.9 GFLOPS (   82.10% HW-peak,   100.74% OpenBLAS)
+OpenBLAS: walltime:    2.116 sec ->     469.4 GFLOPS (   81.50% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 8640x8640 matrix:   0.60 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   10.851 sec ->     118.9 GFLOPS (   82.55% HW-peak,    98.94% OpenBLAS)
+OpenBLAS: walltime:   10.736 sec ->     120.1 GFLOPS (   83.44% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    2.712 sec ->     475.6 GFLOPS (   82.58% HW-peak,   101.22% OpenBLAS)
+OpenBLAS: walltime:    2.745 sec ->     469.9 GFLOPS (   81.58% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 9360x9360 matrix:   0.70 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   14.151 sec ->     115.9 GFLOPS (   80.48% HW-peak,    96.10% OpenBLAS)
+OpenBLAS: walltime:   13.599 sec ->     120.6 GFLOPS (   83.75% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    3.533 sec ->     464.2 GFLOPS (   80.60% HW-peak,    98.13% OpenBLAS)
+OpenBLAS: walltime:    3.467 sec ->     473.1 GFLOPS (   82.13% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 10080x10080 matrix:   0.81 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   17.680 sec ->     115.9 GFLOPS (   80.46% HW-peak,    96.23% OpenBLAS)
+OpenBLAS: walltime:   17.014 sec ->     120.4 GFLOPS (   83.61% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    4.414 sec ->     464.0 GFLOPS (   80.56% HW-peak,    97.92% OpenBLAS)
+OpenBLAS: walltime:    4.323 sec ->     473.9 GFLOPS (   82.27% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 10800x10800 matrix:   0.93 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   21.248 sec ->     118.6 GFLOPS (   82.34% HW-peak,    98.04% OpenBLAS)
+OpenBLAS: walltime:   20.830 sec ->     120.9 GFLOPS (   83.99% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    5.309 sec ->     474.5 GFLOPS (   82.39% HW-peak,   102.39% OpenBLAS)
+OpenBLAS: walltime:    5.436 sec ->     463.5 GFLOPS (   80.46% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 11520x11520 matrix:   1.06 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   26.396 sec ->     115.8 GFLOPS (   80.44% HW-peak,    95.83% OpenBLAS)
+OpenBLAS: walltime:   25.295 sec ->     120.9 GFLOPS (   83.95% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    6.617 sec ->     462.1 GFLOPS (   80.22% HW-peak,    97.37% OpenBLAS)
+OpenBLAS: walltime:    6.443 sec ->     474.5 GFLOPS (   82.39% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 12240x12240 matrix:   1.20 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   30.779 sec ->     119.2 GFLOPS (   82.75% HW-peak,    98.33% OpenBLAS)
+OpenBLAS: walltime:   30.263 sec ->     121.2 GFLOPS (   84.16% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    7.687 sec ->     477.1 GFLOPS (   82.83% HW-peak,    99.97% OpenBLAS)
+OpenBLAS: walltime:    7.685 sec ->     477.2 GFLOPS (   82.85% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 12960x12960 matrix:   1.34 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   37.366 sec ->     116.5 GFLOPS (   80.91% HW-peak,    96.19% OpenBLAS)
+OpenBLAS: walltime:   35.943 sec ->     121.1 GFLOPS (   84.11% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:    9.345 sec ->     465.9 GFLOPS (   80.88% HW-peak,    97.47% OpenBLAS)
+OpenBLAS: walltime:    9.109 sec ->     478.0 GFLOPS (   82.98% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 13680x13680 matrix:   1.50 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   44.176 sec ->     115.9 GFLOPS (   80.49% HW-peak,    95.35% OpenBLAS)
+OpenBLAS: walltime:   42.122 sec ->     121.6 GFLOPS (   84.41% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:   11.038 sec ->     463.9 GFLOPS (   80.53% HW-peak,    98.10% OpenBLAS)
+OpenBLAS: walltime:   10.828 sec ->     472.8 GFLOPS (   82.09% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 14400x14400 matrix:   1.66 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   50.432 sec ->     118.4 GFLOPS (   82.23% HW-peak,    97.94% OpenBLAS)
+OpenBLAS: walltime:   49.394 sec ->     120.9 GFLOPS (   83.96% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:   12.569 sec ->     475.1 GFLOPS (   82.49% HW-peak,   100.20% OpenBLAS)
+OpenBLAS: walltime:   12.594 sec ->     474.2 GFLOPS (   82.32% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 15120x15120 matrix:   1.83 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   58.163 sec ->     118.9 GFLOPS (   82.54% HW-peak,    97.58% OpenBLAS)
+OpenBLAS: walltime:   56.755 sec ->     121.8 GFLOPS (   84.59% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:   14.516 sec ->     476.3 GFLOPS (   82.68% HW-peak,   100.06% OpenBLAS)
+OpenBLAS: walltime:   14.526 sec ->     475.9 GFLOPS (   82.63% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 15840x15840 matrix:   2.01 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   68.217 sec ->     116.5 GFLOPS (   80.92% HW-peak,    96.01% OpenBLAS)
+OpenBLAS: walltime:   65.497 sec ->     121.4 GFLOPS (   84.28% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:   16.968 sec ->     468.4 GFLOPS (   81.33% HW-peak,    97.95% OpenBLAS)
+OpenBLAS: walltime:   16.620 sec ->     478.3 GFLOPS (   83.03% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 16560x16560 matrix:   2.19 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   79.904 sec ->     113.7 GFLOPS (   78.94% HW-peak,    93.60% OpenBLAS)
+OpenBLAS: walltime:   74.787 sec ->     121.4 GFLOPS (   84.34% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:   19.858 sec ->     457.4 GFLOPS (   79.41% HW-peak,    95.59% OpenBLAS)
+OpenBLAS: walltime:   18.983 sec ->     478.5 GFLOPS (   83.07% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
+Julia Version 1.13.0-beta3
+Commit 393f698a6cc (2026-03-14 13:54 UTC)
+Build Info:
+  Official https://julialang.org release
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: 192 × AMD EPYC 9655 96-Core Processor
+  WORD_SIZE: 64
+  LLVM: libLLVM-20.1.8 (ORCJIT, znver5)
+  GC: Built with stock GC
+Threads: 4 default, 0 interactive, 4 GC (on 192 virtual cores)
+Environment:
+  JULIA_DEPOT_PATH = /scratch/pc2-mitarbeiter/xw/mybin/.julia-pkg-otus
+  LD_LIBRARY_PATH = /opt/software/slurm/24.11.6-1/lib
+
+each 17280x17280 matrix:   2.39 GB
+CPU max clock:   4.50 GHz
+Superscalar:    2
+SIMD vector length:  512-bit
+fused multiply-add:    2
+
+single CPU core HW peak performance (Float64): 144.00 GFLOPS
+single CPU core: Benchmarking ...
+
+Me: # of threads: 1
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 1
+Me:       walltime:   91.792 sec ->     112.4 GFLOPS (   78.07% HW-peak,    92.72% OpenBLAS)
+OpenBLAS: walltime:   85.107 sec ->     121.3 GFLOPS (   84.20% HW-peak)
+max abs error:  0.00000000e+00
+
+multi CPU cores HW peak performance (Float64): 576.00 GFLOPS
+multi CPU cores: Benchmarking ...
+
+Me: # of threads: 4
+BLAS Info:
+  Lib → LBTConfig([ILP64] libopenblas64_.so)
+  # of BLAS threads → 4
+Me:       walltime:   22.764 sec ->     453.3 GFLOPS (   78.70% HW-peak,    95.32% OpenBLAS)
+OpenBLAS: walltime:   21.699 sec ->     475.6 GFLOPS (   82.57% HW-peak)
+max abs error:  0.00000000e+00
+
+Let CPUs take a break ...
+
